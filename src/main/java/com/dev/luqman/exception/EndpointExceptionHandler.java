@@ -17,6 +17,6 @@ public class EndpointExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
     public ErroResponse handleGenericException(final Exception ex) {
-        return ErroResponse.builder().error(HttpStatus.INTERNAL_SERVER_ERROR.value()).messaage(String.format("FATAL ERROR ex: %", ex.getMessage())).build();
+        return ErroResponse.builder().error(HttpStatus.INTERNAL_SERVER_ERROR.value()).messaage(String.format("FATAL ERROR ex: %s", ex.getMessage())).build();
     }
 }

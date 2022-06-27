@@ -12,6 +12,7 @@ public class TypeFilter extends BaseFilter {
     @NotNull(message = "Type cannot be null")
     private CatalogTypes type;
 
-    @NotEmpty(message = "name cannot be empty or null.")
     private String name;
+
+    private String column;
 }

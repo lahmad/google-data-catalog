@@ -9,5 +9,6 @@ public class EntrySearchResponse {
     private String name;
     private String type;
     private Schema schema;
+    private String tableName;
 
 }
